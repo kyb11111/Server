@@ -86,6 +86,36 @@ namespace SuperControl.TraceServerModel
            }
        }
 
+       private String m_VideoInfo;
+       [DataMember, DbField(FieldName = "VideoInfo")]
+       public String VideoInfo
+       {
+           get { return m_VideoInfo; }
+           set
+           {
+              if (m_VideoInfo != value)
+              {
+                  m_VideoInfo = value;
+                  OnPropertyChanged("VideoInfo");
+              }
+           }
+       }
+
+       private String m_QrCordeInfo;
+       [DataMember, DbField(FieldName = "QrCordeInfo")]
+       public String QrCordeInfo
+       {
+           get { return m_QrCordeInfo; }
+           set
+           {
+              if (m_QrCordeInfo != value)
+              {
+                  m_QrCordeInfo = value;
+                  OnPropertyChanged("QrCordeInfo");
+              }
+           }
+       }
+
       public override void SetValueWithTableName(string fieldName, object value, out bool sendImmediately)
       {
           base.SetValueWithTableName(fieldName, value, out sendImmediately);
@@ -129,6 +159,22 @@ namespace SuperControl.TraceServerModel
                       m_PicInfo = (System.String)ModelDatabaseEnumerator.ChangeType(value, typeof(System.String));
                       sendImmediately = true;
                       OnPropertyChanged("PicInfo");
+                  }
+                  break;
+              case "VideoInfo":
+                  if (!m_VideoInfo.Equals(value))
+                  {
+                      m_VideoInfo = (System.String)ModelDatabaseEnumerator.ChangeType(value, typeof(System.String));
+                      sendImmediately = true;
+                      OnPropertyChanged("VideoInfo");
+                  }
+                  break;
+              case "QrCordeInfo":
+                  if (!m_QrCordeInfo.Equals(value))
+                  {
+                      m_QrCordeInfo = (System.String)ModelDatabaseEnumerator.ChangeType(value, typeof(System.String));
+                      sendImmediately = true;
+                      OnPropertyChanged("QrCordeInfo");
                   }
                   break;
               default:

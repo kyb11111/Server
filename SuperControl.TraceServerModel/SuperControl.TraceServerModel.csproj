@@ -5,7 +5,7 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>8.0.30703</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{1a4c8e06-401d-4082-a39a-3599e11a8c91}</ProjectGuid>
+    <ProjectGuid>{eaa8469c-51fe-4bb4-b1b3-9dee45bda5cb}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>SuperControl.TraceServerModel</RootNamespace>
@@ -50,6 +50,7 @@
     <Compile Include="UserInfo.cs" />
     <Compile Include="Product.cs" />
     <Compile Include="TraceInfo.cs" />
+    <Compile Include="ECommerce.cs" />
 
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

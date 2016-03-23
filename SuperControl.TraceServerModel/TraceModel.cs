@@ -13,6 +13,7 @@ namespace SuperControl.TraceServerModel
   [KnownType(typeof(UserInfo))]
   [KnownType(typeof(Product))]
   [KnownType(typeof(TraceInfo))]
+  [KnownType(typeof(ECommerce))]
   public class TraceModel : ModelBase , INotifyPropertyChanged
   {
   }

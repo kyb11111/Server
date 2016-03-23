@@ -10,7 +10,7 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Linkesen")]
 [assembly: AssemblyProduct("SuperControl.TraceServerModel")]
-[assembly: AssemblyCopyright("Copyright © Linkesen 2016/2/19 11:05:29")]
+[assembly: AssemblyCopyright("Copyright © Linkesen 2016/3/23 13:33:52")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // 如果此项目向 COM 公开，则下列 GUID 用于类型库的 ID
-[assembly: Guid("1568f1eb-ea10-4591-ab05-a035a8891904")]
+[assembly: Guid("da7cb22d-5771-494c-8056-d56f0f5c4bd7")]
 
 // 程序集的版本信息由下面四个值组成:
 //

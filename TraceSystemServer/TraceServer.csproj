@@ -79,10 +79,6 @@
       <Project>{CC0349DF-7F0B-4049-987E-12A550F72184}</Project>
       <Name>SuperControl.ServiceModel</Name>
     </ProjectReference>
-    <ProjectReference Include="..\SuperControl.TraceServerModel\SuperControl.TraceServerModel.csproj">
-      <Project>{1A4C8E06-401D-4082-A39A-3599E11A8C91}</Project>
-      <Name>SuperControl.TraceServerModel</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
