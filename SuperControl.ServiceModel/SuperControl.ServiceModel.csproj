@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{CC0349DF-7F0B-4049-987E-12A550F72184}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SuperControl.ServiceModel</RootNamespace>
+    <AssemblyName>SuperControl.ServiceModel</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\Release\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MySql.Data">
+      <HintPath>..\dll\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AsyncTransporter.cs" />
+    <Compile Include="Attributes.cs" />
+    <Compile Include="ChildrenModel.cs" />
+    <Compile Include="ClientMonitor.cs" />
+    <Compile Include="DataTableHelper.cs" />
+    <Compile Include="Exception.cs" />
+    <Compile Include="ExcuteAction.cs" />
+    <Compile Include="GeneralModelFactory.cs" />
+    <Compile Include="HistoricalDataCommand.cs" />
+    <Compile Include="HistoricalDataManager.cs" />
+    <Compile Include="IClientSession.cs" />
+    <Compile Include="ModelAccessManager.cs" />
+    <Compile Include="ModelBase.cs" />
+    <Compile Include="ModelCacheManager.cs" />
+    <Compile Include="ModelCollection.cs" />
+    <Compile Include="ModelEnumerator.cs" />
+    <Compile Include="ModelFactory.cs" />
+    <Compile Include="ModelFactoryCollection.cs" />
+    <Compile Include="ModelMapping.cs" />
+    <Compile Include="ModelNotification.cs" />
+    <Compile Include="ObjectDatabaseReader.cs" />
+    <Compile Include="ParentModel.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RealtimData.cs" />
+    <Compile Include="RegisteItem.cs" />
+    <Compile Include="SCDataTable.cs" />
+    <Compile Include="SCField.cs" />
+    <Compile Include="SCMetaData.cs" />
+    <Compile Include="SCModelFactory.cs" />
+    <Compile Include="SystemConfig.cs" />
+    <Compile Include="SCTimeout.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="MySql.Data.dll" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
