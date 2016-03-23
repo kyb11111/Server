@@ -47,6 +47,7 @@ namespace TraceServer
                 Console.Write("加载数据完成，总用时:");
                 Console.WriteLine(DateTime.Now.Subtract(time));
                 Thread.Sleep(1000);
+
             }
         }
     }
